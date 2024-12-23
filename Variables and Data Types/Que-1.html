@@ -1,0 +1,54 @@
+<!-- What are variables in JavaScript? How do you declare a variable using var, let,and
+const?
+ -->
+
+ 1. var Keyword:-
+                  Declares a variable that can be reassigned and re-declared within its scope.
+
+                  The scope of a var variable can be either global or function-scoped.
+
+    Example:-   
+
+     var x = 10;
+     x = 20; 
+    
+    function myFunction() {
+        var y = 5;
+        console.log(y); // Output: 5
+    }
+    
+    console.log(x); // Output: 20 
+          
+      
+
+2. let Keyword:-
+               Declares a variable that can be reassigned but not re-declared within its scope.
+               
+               The scope of a let variable is block-scoped, meaning it's only accessible within the block where it's declared.
+
+    Example:- 
+
+    let x = 10;
+    x = 20; 
+    
+    {
+        let y = 5;
+        console.log(y); // Output: 5
+    }
+    
+    console.log(x); // Output: 20
+              
+
+3. const Keyword:-
+                   Declares a variable that cannot be reassigned or re-declared.
+                   
+                   The scope of a const variable is also block-scoped.
+
+ Example:- 
+
+ const PI = 3.14159;
+  {
+     const x = 10;
+     console.log(x); // Output: 10
+
+ }
